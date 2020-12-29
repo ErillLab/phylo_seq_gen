@@ -46,8 +46,8 @@ db_file = './b_db/{species}/{species}_blast-db'
 #Entrez parameters
 REQUEST_LIMIT = 5
 SLEEP_TIME = .5
-Entrez.email = 'ichaudr1@umbc.edu'
-Entrez.api_key = 'cd2f5bf7a67d086647ec33da2c985e018d08'
+Entrez.email = ''
+Entrez.api_key = ''
 
 #BLAST variables
 query_protein_path = './query/recA.fasta'
