@@ -225,6 +225,11 @@ def load_input_file():
     global query_protein_path
     query_protein_path = './query/' + file_reader['query_file']
 
+    #Load Entrez parameters
+    Entrez.api_key = file_reader['api_key']
+    Entrez.email = file_reader['email']
+    
+
 
 if __name__ == "__main__":
 
