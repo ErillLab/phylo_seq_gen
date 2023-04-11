@@ -72,7 +72,7 @@ def blast_search(sp):
 
     #Set up the parameters
     temp_out_path = './temp'
-    db_path = db_file.format(species=sp)
+    db_path = '"' + db_file.format(species=sp) + '"'
 
     #Conduct the search
     tqdm.write('\tBLAST: ' + str(sp) + '...')
@@ -126,8 +126,8 @@ def compile_database(sp):
     tqdm.write('\tCompiling database for' + str(sp) + '...')
 
     #Set up formatted file directories
-    input_file = cache_file.format(species=sp)
-    output_file = db_file.format(species=sp)
+    input_file = '"' + cache_file.format(species=sp) + '"'
+    output_file = '"' + db_file.format(species=sp) + '"'
 
     #Execute command
     os.system(cmd.format(input_file=input_file, output_file=output_file))
